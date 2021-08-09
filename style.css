@@ -58,7 +58,8 @@ ul {
 
 /*------------------------------*/
 .main-header {
-  background: linear-gradient(rgb(0, 0, 0), rgb(22, 21, 21));
+  background: black;
+  /* background: linear-gradient(rgb(0, 0, 0), rgb(22, 21, 21)); */
   color: white;
 }
 .main-header nav {
@@ -88,11 +89,10 @@ ul {
 }
 #main-list li div {
   margin: 1rem 2rem;
-  padding: 0.3rem 1rem;
-  border: 2.3px solid transparent;
+  padding: 0.3rem 0.3rem;
 }
-#main-list li div:hover {
-  border-color: aquamarine;
+#main-list li div a:hover {
+  color: rgb(187, 11, 11);
 }
 #search {
   padding: 1rem;
@@ -161,8 +161,12 @@ ul {
 }
 
 .hero h2 {
-  margin: 18rem 0rem 3rem 0rem;
+  margin: 18rem 0rem 1rem 0rem;
   font-family: "Netflix", sans-serif;
+}
+.hero h3 {
+  font-family: "Netflix2", sans-serif;
+  margin-bottom: 1rem;
 }
 
 .hero form input {
@@ -175,7 +179,6 @@ ul {
 #pagetwo {
   min-height: 108vh;
   background: rgb(0, 0, 0);
-  border-top: 8px solid rgba(128, 128, 128, 0.699);
 }
 .partone {
   min-height: 30vh;
@@ -234,31 +237,25 @@ ul {
 #pagethree {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  justify-content: center;
 
   background-color: black;
-  border-top: 8px solid rgba(128, 128, 128, 0.699);
 }
-#pagethree div img {
-  width: 50rem;
-}
+
 #threeone {
   color: white;
   font-family: "Netflix", sans-serif;
-  background: url("/img/thirddd_auto_x2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  align-items: flex-start;
+  margin-top: 15rem;
+  margin-left: 5rem;
 }
 #threeone h2 {
   font-family: "Netflix2", sans-serif;
   margin-bottom: 3rem;
-  background: rgba(0, 0, 0, 0.247);
+  color: rgb(189, 8, 8);
 }
 #threeone h4 {
   width: 50rem;
@@ -266,13 +263,15 @@ ul {
 #threetwo {
   margin: 5rem;
 }
+#threetwo img {
+  width: 90rem;
+}
 #pagefour {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 60vh;
-  background: black;
-  border-top: 8px solid rgba(128, 128, 128, 0.699);
+  background-color: rgb(15, 13, 13);
 }
 #pagefour-text {
   color: white;
@@ -289,6 +288,7 @@ ul {
 #pagefour-text h1 {
   font-family: "Netflix2", sans-serif;
   color: rgb(189, 8, 8);
+  font-size: 300%;
 }
 #pagefour-img {
   width: 25%;
@@ -298,14 +298,81 @@ ul {
   width: 100%;
 }
 #pagefour-text button {
-  background: rgb(168, 52, 52);
+  background: rgb(121, 3, 3);
   padding: 0.5rem 1rem;
   font-family: "Netflix2", sans-serif;
   color: white;
   cursor: pointer;
 }
 #pagefour-text button:hover {
-  background: rgb(158, 3, 3);
+  background: rgb(194, 7, 7);
+}
+
+#pagefour-continue {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 13, 13);
+}
+#neww {
+  position: absolute;
+  margin: 80rem 2rem 0rem 95rem;
+  display: flex;
+}
+#neww .button {
+  margin: 0rem 1rem;
+}
+.button-one {
+  background: #27c9b8;
+
+  right: 650px;
+  top: 3080px; /* background color */
+}
+.button-two {
+  background: #27c9b8;
+
+  right: 360px;
+  top: 380px;
+}
+.button-three {
+  background: #27c9b8;
+  /* position: absolute; */
+  right: 60px;
+  top: 380px;
+}
+.button-one,
+.button-two,
+.button-three {
+  color: #fcf6f6; /* text color */
+
+  border-radius: 20rem; /* square corners */
+  padding: 1rem 1rem; /* space around text */
+  /* text-transform: uppercase; /* all capital letters */
+  /*font-weight: 900;
+  letter-spacing: 1px;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 10; */
+}
+
+#img-tv img {
+  width: 40rem;
+}
+#content-pf {
+  color: white;
+  width: 40%;
+  margin-right: 7rem;
+}
+#content-pf h1 {
+  font-family: "Netflix2", sans-serif;
+  margin: 4rem 0rem;
+  color: rgb(189, 8, 8);
+  font-size: 300%;
+}
+#content-pf p {
+  font-family: "Netflix", sans-serif;
 }
 .container {
   max-width: 1170px;
@@ -322,7 +389,7 @@ ul {
 
 .footer {
   background-color: rgb(15, 13, 13);
-  padding: 70px 0;
+  padding: 70px 0 20px 0;
 }
 .footer-col {
   width: 25%;
@@ -379,4 +446,19 @@ ul {
 .footer-col .social-links a:hover {
   color: lightsteelblue;
   background-color: #d68d8d;
+}
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  align-items: flex-end;
+}
+.copyright p {
+  font-family: "Netflix";
+  color: white;
+  margin: 0rem 0.3rem;
+}
+#stream {
+  color: red;
 }
