@@ -273,6 +273,7 @@ ul {
   border-radius: 5rem;
   background: rgb(121, 3, 3);
   color: white;
+  cursor: pointer;
 }
 #free:hover {
   background: rgb(194, 7, 7);
