@@ -37,23 +37,23 @@ ul {
 
 @font-face {
   font-family: "Anton";
-  src: url(/fonts/Anton-Regular.ttf);
+  src: url(./fonts/Anton-Regular.ttf);
 }
 @font-face {
   font-family: "Courgette";
-  src: url(/fonts/Courgette-Regular.ttf);
+  src: url(./fonts/Courgette-Regular.ttf);
 }
 @font-face {
   font-family: "Helvetica";
-  src: url(/fonts/HelveticaLt.ttf);
+  src: url(./fonts/HelveticaLt.ttf);
 }
 @font-face {
   font-family: "Netflix";
-  src: url(/fonts/NetflixSansRegular.ttf);
+  src: url(./fonts/NetflixSansRegular.ttf);
 }
 @font-face {
   font-family: "Netflix2";
-  src: url(/fonts/NetflixSansBold.ttf);
+  src: url(./fonts/NetflixSansBold.ttf);
 }
 
 /*------------------------------*/
@@ -130,7 +130,7 @@ ul {
 }
 .hero {
   background: linear-gradient(rgb(0, 0, 0, 0.5), transparent),
-    url("/img/page-one-bg.jpg");
+    url("./img/page-one-bg.jpg");
   min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,22 +214,22 @@ ul {
   font-size: 130%;
 }
 #tv {
-  background: url("/img/tvshow.jpg");
+  background: url("./img/tvshow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #kids {
-  background: url("/img/kids.jpg");
+  background: url("./img/kids.jpg");
 }
 #movie {
-  background: url("/img/movie.jpg");
+  background: url("./img/movie.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #original {
-  background: url("/img/originals.jpg");
+  background: url("./img/originals.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
